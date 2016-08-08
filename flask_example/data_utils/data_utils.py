@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import defaultdict, Counter
 class DataUtils:
     def __init__(self):
         self.scores = defaultdict(lambda: 0)
@@ -38,3 +38,6 @@ class DataUtils:
 
         self.scores[girl_first[0]] = new_rating[0]
         self.scores[girl_second[0]] = new_rating[1]
+
+    def get_top(self):
+        print(sorted(self.scores.items(), key=lambda x: x[1]))

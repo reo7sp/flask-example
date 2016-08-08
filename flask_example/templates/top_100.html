@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top 100 girls</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    body{
+        background-color: black;
+        text-align: center;
+    }
+    img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #title{
+            width: 100%;
+            background: #a25252;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+    }
+                a{
+                color: white;
+            }
+</style>
+<div class="container">
+    {% for girl in girls %}
+        <div class="col-xs-12 center">
+            <img src="{{ girl['photo'] }}">
+        </div>
+    {% endfor %}
+</div>
+</body>

@@ -43,6 +43,7 @@ setup(
         'gevent',
         'flask',
         'sqlalchemy',
+        'requests',
         # FIXME: Add requires if needed
     ),
 )
